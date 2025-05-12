@@ -160,7 +160,7 @@ export default function Records() {
   
 
     const fetchRecords = async () => {
-        const response = await fetch('http://localhost:5000/records');
+        const response = await fetch('https://verimed-backend-d97h.onrender.com/records');
         const data = await response.json();
         setRecords(data);
     };
@@ -185,7 +185,7 @@ export default function Records() {
             const dataHash = '0x' + keccak256(medicalData);
             await contract.addHash(dataHash);
 
-            await fetch('http://localhost:5000/upload', {
+            await fetch('https://verimed-backend-d97h.onrender.com/upload', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
