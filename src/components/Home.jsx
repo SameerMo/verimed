@@ -31,7 +31,7 @@ export default function Home() {
     <div className="container">
         <h1 className="title">Welcome to Verimed</h1>
         <p>Verimed is a Blockchain based medical record system</p>
-        <img src="src\assets\verimed.png" alt="verimedlogo"></img>
+        <img src="verimed.png" alt="verimedlogo"></img>
     </div>
     </>
   );
