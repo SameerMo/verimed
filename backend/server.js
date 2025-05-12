@@ -5,7 +5,9 @@ import cors from 'cors';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://verimed.netlify.app'
+}));
 app.use(express.json());
 dotenv.config();
 const port = process.env.PORT;
