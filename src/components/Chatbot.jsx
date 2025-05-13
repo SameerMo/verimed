@@ -12,8 +12,6 @@ export default function Chatbot() {
   const [userDetails, setUserDetails] = useState({});
   const navigate = useNavigate();
 
-  const generativeAI = new GoogleGenerativeAI("AIzaSyB1SdBjXOBqRaQHiYgcdmbCcFQLB_mqkds");
-  const model = generativeAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
   useEffect(() => {
     const accessToken = Cookies.get("access_token");
